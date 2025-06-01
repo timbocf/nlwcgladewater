@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>New Life Worship Center, Gladewater TX</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php
 $allowed_pages = ['home', 'ministries', 'directions', 'media'];
 $page = isset($_GET['page']) && in_array($_GET['page'], $allowed_pages) ? $_GET['page'] : 'home';
@@ -22,6 +16,14 @@ switch ($page) {
         break;
 }
 ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Life Worship Center, Gladewater TX</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/<?php echo $css ?>" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen" />
@@ -31,6 +33,8 @@ switch ($page) {
 <script src="scripts/jquery.nivo.slider.js" type="text/javascript"></script>
 <script src="scripts/jquery.tablesorter.js" type="text/javascript"></script>
 <script>$(document).ready(function(){$("#mediatbl").tablesorter({headers:{2:{sorter:"shortDate"}},});});</script>
+<!-- Bootstrap JS Bundle (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6VKHr7Wl9EXeU6e1B1r6U6e1B1r6U6e1B1r6U6e1B1r6" crossorigin="anonymous"></script>
 </head>
 <body>
 <script type="text/javascript">
