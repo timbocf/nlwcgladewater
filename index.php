@@ -28,7 +28,7 @@ switch ($page) {
 <link rel="stylesheet" type="text/css" href="css/<?php echo $css ?>" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen" />
 
-<script src="scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+<!-- Removed jQuery script as Bootstrap 5 no longer relies on it -->
 <script type="text/javascript" src="scripts/script.js"></script>
 <script src="scripts/jquery.nivo.slider.js" type="text/javascript"></script>
 <script src="scripts/jquery.tablesorter.js" type="text/javascript"></script>
