@@ -24,8 +24,12 @@
     	<a href="http://www.facebook.com/pages/New-Life-Worship-Center-Gladewater/132937660054214" target="_blank"><img src="images/fbicon.png" id="fbicon" /></a>
   </div>
 </div>
+<!-- ADDED THIS BUT ITS NOT RIGHT YET -->
   <div id="header">
     <div id="header_wrap"></div>
+<!-- ADDED THIS BUT ITS NOT RIGHT YET -->
+
+
     <nav id="nav">
         <ul>
             <li><a href="index.htm" id="home">home</a></li>
