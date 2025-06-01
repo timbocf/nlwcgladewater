@@ -1,14 +1,3 @@
-/* LINK TO LIVE SERVICES PAGE */
-#live_link {
-	position:fixed;
-	left:-7px;
-	top:150px;
-	width:30px;
-	height:200px;
-	z-index:999;
-	display:none !important; /* DELETE THIS LINE WHEN THE VIDEO GOES LIVE!! */
-}
-
 /* GENERAL */
 /* OVERRIDE INLINE TABLE STYLES WITH 'genericTable'!! */
 .genericTable {
@@ -118,7 +107,7 @@ a#login:hover {
 *:focus {
 	outline:none;
 }
-.textfield active {
+.textfield:active {
 	border:0;
 }
 #header {
