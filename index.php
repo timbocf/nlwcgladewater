@@ -1,21 +1,3 @@
-<?php
-$allowed_pages = ['home', 'ministries', 'directions', 'media'];
-$page = isset($_GET['page']) && in_array($_GET['page'], $allowed_pages) ? $_GET['page'] : 'home';
-switch ($page) {
-    case 'ministries':
-        $css = 'ministries.css';
-        break;
-    case 'directions':
-        $css = 'directions.css';
-        break;
-    case 'media':
-        $css = 'media.css';
-        break;
-    default:
-        $css = 'home.css';
-        break;
-}
-?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -27,8 +9,6 @@ switch ($page) {
 <link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/<?php echo $css ?>" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen" />
-
-<!-- Removed jQuery script as Bootstrap 5 no longer relies on it -->
 <script type="text/javascript" src="scripts/script.js"></script>
 <script src="scripts/jquery.nivo.slider.js" type="text/javascript"></script>
 <script src="scripts/jquery.tablesorter.js" type="text/javascript"></script>
@@ -57,18 +37,17 @@ switch ($page) {
     </div>
     <nav id="nav">
         <ul>
-            <li><a href="index.php?page=home" id="home">home</a></li>
-            <li><a href="index.php?page=ministries" id="ministries">ministries</a></li>
-            <li><a href="index.php?page=directions" id="directions">directions</a></li>
-            <li><a href="index.php?page=media" id="media">media</a></li>
+            <li><a href="index.htm" id="home">home</a></li>
+            <li><a href="ministries.htm" id="ministries">ministries</a></li>
+            <li><a href="directions.htm" id="directions">directions</a></li>
+            <li><a href="media.htm" id="media">media</a></li>
         </ul>
     </nav>
 
     <div id="main">
     <!-- Page content will be included here -->
-    <?php
-    include "pages/{$page}.php";
-    ?>
+
+
 </div>
 </div>
 <div class="clearfix"></div>
