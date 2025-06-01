@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+#sub {
+	/*clear:both;*/
+	/*overflow:hidden;*/
+	width:960px;
+	height:490px;
+	background:#ffffff url(../images/subBG.png) no-repeat bottom /*center*/;
+	border-radius: 5px;
+	margin:27px 0 0 0;
+	
+}
+#sub #subBGfix {
+	background:url(../images/subBG2.gif) no-repeat;
+	width:960px;
+	height:490px;
+}
+#sub h2 {
+	font-size:18px;
+	padding-top:10px;
+	letter-spacing:-1px;
+}
+#sub h3 {
+	letter-spacing:-1px;
+}
+#sub #col1, #sub #col2, #sub #col3 {
+	height:490px;
+	color:#7a7a7a;
+	/*background:#eee;*/
+	/*padding:10px;*/
+	font-size:12px;
+}
+#sub #col1 {
+	float:left;
+	margin-left:20px;
+	margin-right:30px;
+	width:276px;
+}
+#sub #col1 p {
+	padding-top:10px;
+}
+#sub #col2 {
+	float:left;
+	margin-left:20px;
+	margin-right:20px;
+	width:276px;
+}
+#sub #col2 #times {
+	padding-top:10px;
+}
+#sub #col2 h4 {
+	margin-top:0;
+}
+#sub ul li {
+	list-style-type:none;
+	padding-bottom:2px;
+	color:#424242;
+	font-style:normal;
+	font-size:14px;
+}
+#sub #col3 {
+	float:right;
+	width:275px;
+	padding-right:10px;
+}
+#sub #col3 ul {
+	padding-top:10px;
+	color:#454545;
+	font-weight:bold;
+}

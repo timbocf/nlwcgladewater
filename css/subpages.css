@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS FILE FOR PAGES OTHER THAN HOME */
+
+#sub {
+	height:100px;
+	background:/*#ffffff*/ url(../images/subBG.png) no-repeat bottom;
+}
+#directions_page {
+	/*margin-left:50px;*/
+	float:right;
+	width:558px;
+	height:339px;
+	padding:0 20px 20px 40px;
+	color:#333;
+	background-color:#fff;
+	border-radius:5px;
+	font-weight:bold;
+}
+#media, #live, #admin {
+	float:right;
+	width:618px;
+	height:auto;
+	color:#333;
+	border-radius:5px;
+	font-size:14px;
+}
+#media {
+	padding-bottom:50px;
+	background-color:#fff;
+}
+#live {
+	padding-bottom:5px;
+	background-color:#fff;
+}
+#admin_area {
+	margin-left:10px;
+	margin-bottom:20px;
+	position:relative;
+	background-color: #fff;
+}
+#media #col1 {
+	float:left;
+	width:270px;
+	padding-left:20px;
+}
+#media #col2 {
+	float:right;
+	height:400px;
+	padding:0;
+}
+table {
+	margin-top:20px;
+}
+table tr td {
+	height:25px;
+}
+table tr td.mediatbl {
+	border-bottom:1px solid #eee;
+}
+.noborder {
+	border:0;
+}
+.header {
+	font-weight:bold;
+	font-size:16px;
+	border-bottom:1px solid #999;
+	margin-bottom:10px;
+	text-align:left;
+	background-image: url(../images/sortbg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-color: #401C00;
+	cursor: pointer;
+	color:#fff;
+	padding-left:10px;
+	height:22px;
+}
+.stitle {
+	width:250px;
+	padding-left:10px;
+}
+.stitle a {
+	color:#004000;
+	font-weight:bold;
+}
+.stitle a:hover {
+	color:#080;
+}
+.speaker, .date {
+	padding-left:10px;
+	font-size: 12px;
+}
+.dl {
+	width:10px;
+}
+.download-count {
+	font-style:italic;
+	font-size:9px;
+	color:#CCC;
+}
+.tdata {
+	font-style:italic;
+}
+html body #wrap #main #ministries table tr td img {
+	width:150px; 
+	height:150px;
+}
+.label {
+	width:150px;
+}
+#main #ministries {
+	float:right;
+	width:618px;
+	height:500px;
+	border-radius:5px;
+	/*background:#fff;*/
+}
+#main #ministries h2 {
+	margin-top:0;
+}
+#main #ministries table tr td {
+	margin:10px;
+	padding:10px 30px;
+}
+#pastors {
+	float:right;
+	width:578px;
+	height:auto;
+	color:#333;
+	background-color:#fff;
+	border-radius:5px;
+	padding:0 20px 20px 20px;
+}
+#bio img {
+	padding:10px 20px 10px 0;
+	float:left;
+}
+#bio a {
+	color:#666;
+}
+#bio a:hover {
+	color:#CCC;
+}
+#bio p {
+	margin-top:10px;
+}
+
+/* MEDIA PAGE */
+
+.first {
+	margin-bottom:10px;
+}
+#live {
+	height:640px;
+	background:#67bbda;
+}
+#live #video {
+	width:608px;
+	height:368px; 
+	background:#CCC; 
+	position:relative;
+	margin-top:5px;
+	margin-left:5px;
+	border:5px solid #fff;
+	border-radius:5px;
+}
+#youversion {
+	float:left;
+	height: 640px;
+	margin-bottom:20px;
+}
+
+.showUsername {
+	position:absolute;
+	top:10px;
+	right:50px;
+}
+.showDBFields {
+	width: 100%;
+	height:200px;
+	overflow:scroll;
+}

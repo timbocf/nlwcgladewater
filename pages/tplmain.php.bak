@@ -1,0 +1,122 @@
+<?php ?>
+
+<!DOCTYPE html>
+<html><head>
+<title>New Life Worship Center, Gladewater TX // <?php echo $page ?></title>
+<link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/<?php echo $css ?>" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen" />
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script src="scripts/jquery.nivo.slider.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	function loadCalendar()
+	{
+		var load = window.open("calendar.php");
+	}
+</script>
+
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider();
+});
+</script>
+
+<script>
+$(function(){
+	$('#ministries img').animate({"opacity" : .8});
+});
+$(function(){
+	$('#ministries img').hover(function(){
+		$(this).stop().animate({"opacity" : 1});
+	}, function(){
+		$(this).stop().animate({"opacity" : .8});
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5781743-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="topbar">
+	<div id="topbar_wrap">
+    	<!--<span id="mobile_link"><a href="index.php?page=iphone" id="mobile_link">Mobile Site</a></span>-->
+    	<a href="http://www.facebook.com/pages/New-Life-Worship-Center-Gladewater/132937660054214" target="_blank"><img src="images/fbicon.png" id="fbicon" /></a>
+    	<!-- <div id="search"><?php // include 'includes/searchform.php' ?></div> -->
+    </div>
+</div>
+<div class="clearfix"></div>
+<div id="header"></div>
+
+<div id="wrap">
+    <div id="headbar"></div>
+	<div id="nav">
+        <ul>
+            <li><a href="index.php?page=home" id="home">home</a></li>
+            <li><a href="index.php?page=ministries" id="ministries">ministries</a></li>
+            <li><a href="index.php?page=directions" id="directions">directions</a></li>
+            <li><a href="index.php?page=media" id="media">media</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="calendar"> 
+            <div id="events"> 
+                    <iframe src="restylegc/restylegc.php?title=NLWC%20Event%20Calendar&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=265&amp;wkst=1&amp;src=nlwcgladewater%40gmail.com&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;ctz=America%2FChicago" style=" border-width:0 " width="304" height="264" frameborder="0" scrolling="no"></iframe>
+            </div> 
+            	<a href="index.php?page=calendar"><img src="images/calendar.png" /></a> 
+            </div>
+            
+            
+		<!-- PAGE CONTENT VARIABLE GOES HERE -->
+        <?php echo $page_content ?>
+
+
+</div>
+<div class="clearfix"></div>
+<div id="footerBGfix">
+  <div id="footer">
+    <div id="footer_wrap">
+      <div id="col1">
+        <ul>
+          <li>New Life Worship Center</li>
+          <li>401 N Lee Dr</li>
+          <li>Gladewater TX 75647</li>
+          <li>903-845-8108</li>
+          <li>nlwcgladewater@gmail.com</li>
+        </ul>
+      </div>
+      <div id="col2">
+        <ul>
+          <li><a href="index.php?page=home">home</a></li>
+          <li>|</li>
+          <li><a href="index.php?page=ministries">ministries</a></li>
+          <li>|</li>
+          <li><a href="index.php?page=media">media</a></li>
+        </ul>
+      </div>
+      <div id="col3"><!--filler--></div>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.yv_bubble_wrap {
+	position: absolute;
+	margin-top:-225px;
+	width: 420px;
+	max-height:185px;
+	margin-left:-100px;
+}
+.yv_bubble_wrap p {
+	margin:0 0 -3px 0;
+}
+
+#close_yv_bubble {
+	float:right;
+	margin:5px;
+	font-size:10px;
+	text-decoration:underline;
+	cursor:pointer;
+	padding-right:5px;
+}
+
+#ref_yv_bubble {
+	float:left;
+	margin:5px;
+	padding-left:5px;
+}
+
+#powered_by_yv { 
+	float:right;
+	font-size:10px;
+	padding-top:5px;
+	padding-right:10px;
+	padding-bottom:7px;
+}
+
+#yv_bubble p {
+	width:380px;
+	max-width:380px;
+	padding:10px;
+	margin-top:30px;
+	max-height:100px;
+	overflow:auto;
+	font-size:11px;
+	line-height:16px;
+	margin-left:auto;
+	margin-right:auto;
+	background:#fff;
+}
+
+/* CSS hack for Safari */
+@media screen and (-webkit-min-device-pixel-ratio:0){ 
+	#yv_bubble p { 
+		position:relative;
+		left:10px;
+	}
+} 
+
+.yv_bubble_icon{
+	cursor:pointer;
+}
+
+#yv_widget{
+	width:150px;
+	padding:5px;
+}
+#yv_tabs div {
+	padding:5px;
+	border: 1px solid;
+}
+
+#yv_tabs a{
+	cursor:pointer;
+}
+
+#yv_dailyreading{
+	/*position:absolute;*/
+	padding-top:10px;
+	width:inherit;
+}
+#yv_contributions{
+	/*position:absolute;*/
+	padding-top:10px;
+	width:inherit;
+}
+#yv_search{
+	/*position:absolute;*/
+	padding-top:10px;
+	width:inherit;
+}
+
+.contrib_entry {
+	padding-bottom:3px;
+}

@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	width:100%;
+	color:#000000;
+	font-size:14px;
+	background:#e5e5e5 url(images/bglines.png);
+	font-family:Arial, Helvetica, sans-serif;	
+}
+.logo {
+	width: 100%;
+	overflow: hidden;
+}
+#wrap {
+	/*margin-left:10px;*/
+}
+#nav, #main, #times, #directions, #calendar {
+	border-radius:5px;
+	border:1px solid #999;
+	box-shadow:3px 3px 2px #ccc;
+	background:#ffffff;
+	width:auto;
+	margin:10px auto;
+	padding:15px;
+}
+a {
+	color:#060;
+	font-weight:bold;
+	text-decoration:none;
+}
+ul li {
+	list-style-type:none;
+}
+#nav ul li {
+	display:inline;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-shadow:2px 2px 2px #ccc;
+	color:#1B4569;
+}
+h2 {
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:18px;
+}
+h3 {
+	font-size:16px;
+}
+p {
+	margin-bottom:15px;
+}
+#calendar {
+	overflow:hidden;
+}
+#directions img {
+	margin-left:5px;
+}
+.less {
+	color:#959595;
+	font-size:11px;
+	margin-left:10px;
+	font-weight:bold;
+}
+#pastors {
+	width:300px;
+	padding:0 10px;
+}
+#mobile_or_main {
+	margin-left:90px;
+	height:100px;
+}
+#mobile_or_main ul li {
+	display:inline;
+	float:left;
+	margin-right:10px;
+}
+#mobile_or_main ul li a {
+	font-size:14px;
+	text-shadow:1px 1px #F2F2F2;
+}
+#mobile_or_main ul li a#fullsite {
+	color:#1B4569;
+}
+#mobile_or_main ul li a#mobilesite {
+	color:#333;
+}
+table tr td {
+	font-size:9px;
+}
+table tr td.date {
+	width:40px;
+	height:30px;
+}
+.ps, .ps img {
+	width:100px;
+}
+#ministries {
+	padding-bottom:100px;
+	margin-bottom:100px;
+}
+.download-count {
+	font-style:italic;
+	font-size:9px;
+	color:#CCC;
+}
+.live_window {
+	width: 300px;
+	height: 200px;
+	border: 0px none transparent;
+}

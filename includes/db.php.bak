@@ -1,0 +1,29 @@
+<?php 
+$database = 'nlwc';
+
+if($_SERVER['SERVER_NAME'] === 'localhost'){
+	$db = mysqli_connect("localhost", "root", "tr8283");
+}else{
+	$db = mysqli_connect("divineconnectionsdes.ipagemysql.com", "timbocf", "tr!828333");
+}
+
+if(!$db) {
+	echo 'Error connecting to database.';
+	exit();
+}
+if(!mysqli_query($db, 'USE nlwc')) {
+		echo 'Error selecting database.';
+		exit();
+}
+
+$sql = mysqli_query($db, 'CREATE DATABASE IF NOT EXISTS nlwc');
+?>
+
+<?php 
+//$link = mysql_connect('divineconnectionsdes.ipagemysql.com', 'timbocf', 'tr!828333'); 
+//if (!$link) { 
+//    die('Could not connect: ' . mysql_error()); 
+//} 
+//echo 'Connected successfully'; 
+//mysql_select_db(dl_manager); 
+?> 

@@ -1,0 +1,426 @@
+/*
+Theme Name: NLWC
+Theme URI: http://nlwcgladewater.com
+Description: New Life Worship Center WordPress theme
+Version: 1
+Author: Tim Rodgers
+Author URI: http://nlwcgladewater.com
+*/
+
+/* LINK TO LIVE SERVICES PAGE */
+#live_link {
+	position:fixed;
+	left:-7px;
+	top:150px;
+	width:30px;
+	height:200px;
+	z-index:999;
+	/*display:none !important; /* DELETE THIS LINE WHEN THE VIDEO GOES LIVE!! */
+}
+
+/* GENERAL */
+html, body, div, span, img, a, ul, li {
+	margin:0;
+	border:0;
+	padding:0;
+}
+.clearfix {
+	clear:both;
+}
+a {
+	text-decoration:none;
+	color:#333;
+}
+a:hover {
+	color:#999;
+}
+h1, h2, h3, h4, h5, h6, .label {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#281601;
+	font-style:italic;
+	text-shadow:1px 1px #CCC;
+	-webkit-column-span:all;
+    -moz-column-span:all;
+    column-span:all;
+}
+ul {
+	list-style-type:none;
+}
+
+/* BODY */
+body {
+	background:#67bbda url(images/bg_slice.gif) repeat-x;
+	color:#ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+	width:100%;
+	height:100%;
+}
+#wrap {
+	width:960px;
+	margin:-128px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom:0;
+}
+
+/* HEADER */
+#topbar {
+	background:url(images/topbar.gif) no-repeat;
+	width:960px;
+	height:30px;
+	margin:0 auto;
+	position:relative;
+}
+#topbar_wrap {
+	position:absolute;
+	right:10px;
+	top:2px;
+}
+#topbar_wrap ul li {
+	list-style-type:none;
+	display:block;
+	float:left;
+	padding-left:5px;
+}
+#s {
+	background:#fff url(images/searchbutton.png) no-repeat 0 2px;
+	border-radius:5px;
+	width:180px;
+	height:24px;
+	font-size:12px;
+}
+.textfield {
+	border:0;
+	padding: 0 3px 0 23px;
+	vertical-align:middle;
+}
+.submitbtn {
+	display:none;
+}
+*:focus {
+	outline:none;
+}
+.textfield active {
+	border:0;
+}
+#header {
+	background:url(images/header.gif) no-repeat top center;
+	margin:0 auto;
+	width:100%;
+	height:128px;
+}
+#headbar {
+	background:url(images/headbar.gif) no-repeat;
+	width:100%;
+	height:128px;
+}
+#nav {
+	height:67px;
+	width:500px;
+	float:right;
+	margin-top:-1px;
+	background:url(images/navbg.png) no-repeat;
+	overflow:hidden;
+}
+#nav ul {
+	list-style-type:none;
+	padding-left:5px;
+}
+#nav ul li {
+	width:123px;
+	height:68px;
+	display:block;
+	float:left;
+}
+#nav ul li a {
+	width:120px;
+	height:68px;
+	display:block;
+	float:left;
+	text-indent:-9999px; 
+}
+#nav ul li a#home {
+	background:url(images/nav.png) no-repeat -7px 0;
+}
+#nav ul li a#home:hover {
+	background:url(images/nav.png) no-repeat -6px -71px;
+}
+#nav ul li a#ministries {
+	background:url(images/nav.png) no-repeat -132px 0;
+}
+#nav ul li a#ministries:hover {
+	background:url(images/nav.png) no-repeat -130px -71px;
+	width:118px;
+	margin-left:-1px;
+}
+#nav ul li a#directions {
+	background:url(images/nav.png) no-repeat -242px 0;
+	width:125px;
+	margin-left:-5px;
+}
+#nav ul li a#directions:hover {
+	background:url(images/nav.png) no-repeat -241px -71px;
+	width:125px;
+}
+#nav ul li a#media {
+	background:url(images/nav.png) no-repeat -370px 0;	
+	width:128px;
+}
+#nav ul li a#media:hover {
+	background:url(images/nav.png) no-repeat -369px -71px;
+	width:110px;
+}
+#main {
+	width:960px;
+	height:auto;
+	min-height:450px;
+	padding-top:20px;
+	clear:both;
+	margin-bottom:0;
+}
+#calendar {
+	width:307px;
+	height:361px;
+	background:url(images/events.gif) no-repeat;
+	float:left;
+}
+#calendar #events {
+	width:304px;
+	height:265px;
+	margin-top:55px;
+	border:1px solid black;
+	color:black;
+	float:left;
+}
+#slider, #results {
+	float:right;
+	width:618px;
+	height:357px;
+	border-radius: 5px;
+}
+#bio {
+	height:500px;
+	background:url(images/subBG.png) no-repeat center bottom;
+}
+#bio img {
+	float:left;
+	margin-left:30px;
+}
+#results {
+	background-color:#fff;
+}
+#results h1 {
+	margin-top:0;
+	margin-bottom:0;
+	padding-bottom:20px;
+	background-color:#67bbda;
+}
+#results ul {
+	background:#fff;
+	border-radius:5px;
+}
+#results li {
+	padding:10px 10px 0 10px;
+}
+
+.less {
+	color:#959595;
+	font-size:11px;
+	margin-left:10px;
+	font-weight:bold;
+}
+#ministries {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+}
+#ministries br {
+	-webkit-column-span: all;
+	-moz-column-span: all;
+}
+
+
+#footerBGfix {
+	background:url(images/footerBGfix.gif) repeat-x 0 2px;
+	width:100%;
+	height:150px;
+}
+
+#footer {
+	background:url(images/footer_bar.png) no-repeat top center;
+	width:100%;
+	height:150px;
+	margin-top:-2px;
+	font-family:Arial, Helvetica, sans-serif;	
+	color:#587782;
+	font-size:14px;
+}
+#footer a {
+	color:#ab7603;
+}
+#footer a:hover {
+	color:#d9990e;
+}
+#footer ul {
+	list-style-type:none;
+}
+#footer_wrap {
+	width:960px;
+	margin:0 auto;
+	padding-top:40px;
+}
+#footer_wrap #col1 {
+	float:left;
+	width:33%;
+	font-weight:bold;
+}
+#footer_wrap #col2 {
+	width:33%;
+	float:left;
+}
+#footer_wrap #col2 ul {
+	margin-top:65px;
+	padding-left:40px;
+}
+#footer_wrap #col2 li {
+	display:inline;
+	padding-right:15px;
+}
+#footer_wrap #col3 {
+	width:33%;
+	float:right;
+}
+
+/*  SUB AREA */
+.content {
+	width:600px;
+	min-height:400px;
+	height:auto;
+	float:right;
+	padding:20px;
+	color:#333;
+	margin-bottom:30px;
+}
+.content img {
+	border:1px solid #CCC;
+	margin-top:10px;
+}
+.box {
+	border-radius: 5px;
+	background-color:#ffffff;
+}
+#sub {
+	width:960px;
+	height:490px;
+	background-image:url(../images/subBG.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin:27px 0 0 0;
+}
+#sub #subBGfix {
+	background:url(../images/subBG2.gif) no-repeat;
+	width:960px;
+	height:490px;
+}
+#sub h2 {
+	font-size:18px;
+	/*padding-top:10px;*/
+	letter-spacing:-1px;
+}
+#sub h3 {
+	letter-spacing:-1px;
+}
+#sub #col1, #sub #col2, #sub #col3 {
+	height:490px;
+	color:#7a7a7a;
+	font-size:12px;
+}
+#sub #col1 {
+	float:left;
+	margin-left:20px;
+	margin-right:30px;
+	width:276px;
+}
+#sub #col1 p {
+	padding-top:10px;
+}
+#sub #col2 {
+	float:left;
+	margin-left:20px;
+	margin-right:20px;
+	width:276px;
+}
+#sub #col2 #times {
+	padding-top:10px;
+}
+#sub #col2 h4 {
+	margin-top:0;
+}
+#sub ul li {
+	list-style-type:none;
+	padding-bottom:2px;
+	color:#424242;
+	font-style:normal;
+	font-size:14px;
+}
+#sub #col3 {
+	float:right;
+	width:275px;
+	padding-right:10px;
+}
+#sub #col3 ul {
+	padding-top:10px;
+	color:#454545;
+	font-weight:bold;
+}
+.subfix {
+	margin-bottom:-10px;
+	background: url(images/subBG.png) bottom center no-repeat;
+}
+.subfix img {
+	
+}
+.label {
+	width:150px;
+	margin-bottom:40px;
+}
+#ministries {
+	width:600px;
+	margin:0 auto;
+}
+#ministries div {
+	margin-bottom:20px;
+	width:150px;
+	
+	/*column-count: 2;
+	column-gap: 5px;
+	
+	-moz-column-count: 2;
+	-moz-column-gap: 5px;
+	
+	-webkit-column-count: 2;
+	-webkit-column-gap: 5px;*/
+}
+#ministries h2 {
+	margin-top:0;
+}
+#gallery {
+	margin-top:20px;
+}
+.gallery-item {
+	height:2em;
+}
+.file {
+	width:330px;
+	margin-right: 20px;
+	float:left;
+	font-weight:bold;
+}
+.speaker {
+	float:left;
+	font-size:0.8em;
+	font-style:italic;
+	height:1.5em;
+}
+.date {
+	float:right;
+}

@@ -1,0 +1,18 @@
+The effect parameter can be any of the following:
+
+sliceDown
+sliceDownLeft
+sliceUp
+sliceUpLeft
+sliceUpDown
+sliceUpDownLeft
+fold
+fade
+random
+slideInRight
+slideInLeft
+boxRandom
+boxRain
+boxRainReverse
+boxRainGrow
+boxRainGrowReverse

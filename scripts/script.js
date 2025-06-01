@@ -1,0 +1,77 @@
+// Updates 'Times Downloaded' number in real-time
+$(function() {
+	// This code is executed after the DOM has been completely loaded
+	
+	$('#mediatbl td.sermontitle a').click(function() {
+		
+		var countSpan = $('.download-count', this);
+		countSpan.text(parseInt(countSpan.text())+1);
+	});
+});
+
+// Opens sermons in a popup window
+var windowSizeArray = [ "width=400,height=300"];
+ 
+$(function(){
+	$('.newWindow').click(function (event){
+
+		var url = $(this).attr("href");
+		var windowName = "popUp";//$(this).attr("name");
+		var windowSize = windowSizeArray[$(this).attr("rel")];
+
+		window.open(url, windowName, windowSize);
+
+		event.preventDefault();
+
+	});
+});
+
+// Displays lastest sermon on its own row on the Media page
+//$(function(){
+//	$('<tr><td colspan="3" class="second"></td></tr>').insertAfter('#media tr:nth-child(2)');
+//});
+$(function(){
+	$('#media tr:first').addClass('first');
+});
+
+// Loads Google Event Calendar
+function loadCalendar(){
+		var load = window.open("calendar.php");
+};
+
+// Animates fading images on Ministries page
+// Commenting this first function out to reverse hover effect
+//    $(function(){
+//   	 $('#ministries img').animate({"opacity" : .8});
+//    });
+$(function(){
+	$('#ministries a img').hover(function(){
+		$(this).stop().animate({"opacity" : .8});
+	}, function(){
+		$(this).stop().animate({"opacity" : 1});
+	});
+});
+
+// Animates Facebook icon link
+$(function(){
+	$('#topbar_wrap img').hover(function(){
+		$(this).stop().animate({"marginTop" : "2px"}, 75);
+	}, function(){
+		$(this).stop().animate({"marginTop" : "0"}, 5);
+	});
+});
+
+
+// Invokes Home page image slider (Nivo)
+$(function(){
+    $('#slider').nivoSlider();
+});
+
+// Hover function for Live Feed link
+$(function(){
+	$('#live_link').hover(function(){
+		$(this).css('left', 0);
+	}, function(){
+		$(this).css('left', '-7px');
+	});
+});
