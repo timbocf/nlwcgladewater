@@ -45,6 +45,7 @@ body {
 	height:67px;
     display:flexbox;
 }
+.navbar-toggler { color: #fff; }
 #nav a {
 	width:123px;
     color: #eee;
